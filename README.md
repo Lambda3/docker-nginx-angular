@@ -8,7 +8,7 @@ This repository contains `Dockerfile` definitions for [lambda3/nginx-angular](ht
 
 ## Supported tags
 
-- [`latest`, `alpine`, `1.14`, `1.14-alpine` (*agent/Dockerfile*)](https://github.com/lambda3/docker-nginx-angular/blob/master/Dockerfile)
+- [`latest`, `alpine`, `1.19`, `1.19-alpine` (*agent/Dockerfile*)](https://github.com/lambda3/docker-nginx-angular/blob/master/Dockerfile)
 
 ## Building
 
@@ -18,7 +18,7 @@ Simply add the built files to the `/usr/share/nginx/html` directory, as specifie
 A good example, assuming the `Dockerfile` is in the Angular project root, would be:
 
 ````dockerfile
-FROM lambda3/nginx-angular:1.14-alpine
+FROM lambda3/nginx-angular:1.19-alpine
 COPY dist/<yourprojectname>/ /usr/share/nginx/html
 ````
 
@@ -38,7 +38,7 @@ docker run --volume="$(pwd)/dist/<yourprojectname>:/usr/share/nginx/html" -p 420
 
 ## Maintainers
 
-* [Giovanni Bassi](http://blog.lambda3.com.br/L3/giovannibassi/), aka Giggio, [Lambda3](http://www.lambda3.com.br), [@giovannibassi](https://twitter.com/giovannibassi)
+- [Giovanni Bassi](http://blog.lambda3.com.br/L3/giovannibassi/), aka Giggio, [Lambda3](http://www.lambda3.com.br), [@giovannibassi](https://twitter.com/giovannibassi)
 
 ## License
 
